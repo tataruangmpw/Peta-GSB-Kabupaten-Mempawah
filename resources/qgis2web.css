@@ -424,4 +424,16 @@ td video {
 .fa-exclamation-triangle {
     color: orangered;
 	font-size: 15px;
+
+}
+/* Optimasi Mobile Search */
+@media (max-width: 767px) {
+    .leaflet-control-search {
+        width: 80% !important;
+        height: 50px !important;
+        font-size: 16px !important; /* Menghindari auto-zoom di iPhone */
+    }
+    .leaflet-control-search .search-input {
+        height: 40px !important;
+    }
 }
